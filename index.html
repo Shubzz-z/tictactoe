@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex relative flex-col w-full min-h-screen items-center justify-center bg-gradient-to-r from-blue-600 to-violet-600 text-white p-4">
+        <h1 class="bg-white bg-opacity-15 px-10 py-2 rounded-3xl absolute top-12" data-current-player></h1>
+        <div class="bg-white bg-opacity-15 grid grid-cols-3 rounded-3xl min-w-[12rem] max-w-80 w-11/12 aspect-square border text-3xl p-7" data-game>
+            <div class="w-full aspect-square flex justify-center items-center"></div>
+            <div class="border-l border-r w-full aspect-square flex justify-center items-center"></div>
+            <div class="w-full aspect-square flex justify-center items-center"></div>
+            <div class="border-t border-b w-full aspect-square flex justify-center items-center"></div>
+            <div class="border w-full aspect-square flex justify-center items-center"></div>
+            <div class="border-t border-b w-full aspect-square flex justify-center items-center"></div>
+            <div class="w-full aspect-square flex justify-center items-center"></div>
+            <div class="border-l border-r w-full aspect-square flex justify-center items-center"></div>
+            <div class="w-full aspect-square flex justify-center items-center"></div>
+        </div>
+        <button class="bg-white bg-opacity-15 px-10 py-2 rounded-3xl absolute bottom-12" data-new-game>New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
