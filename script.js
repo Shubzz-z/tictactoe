@@ -20,6 +20,7 @@ function initGame(){
     currentPlayer="X";
     gridposition = ["","","","","","","","",""];
     currentPlayerblock.textContent =`Current Player - ${currentPlayer}`;
+    newGame.classList.add ("hidden");
     gameDivs.forEach((div)=>{
         div.classList.remove("bg-green-600")
         div.textContent="";
@@ -77,8 +78,5 @@ gameDivs.forEach((div, index) => {
     div.style.cursor = 'pointer';
 });
 
-// function endGame() {
-    
-// }
 
 newGame.addEventListener("click",initGame);
